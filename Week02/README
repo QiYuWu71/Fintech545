@@ -1,0 +1,11 @@
+In order to use my python scripts, you need to download libraries as follows:
+numpy
+scipy
+matplotlib.pyplot
+sklearn
+seaborn
+statsmodels
+scipy
+
+for each problem set, I have used the division symbol to make my each questions easy to identify.
+Also, I make comments directly inside python scripts.
