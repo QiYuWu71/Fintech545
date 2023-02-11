@@ -1,0 +1,7 @@
+All the code has been divided based on the problem.
+In order to run my code, you need to have libraris:
+pandas
+numpy
+time
+scipy
+matplotlib
