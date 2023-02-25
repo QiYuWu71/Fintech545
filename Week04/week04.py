@@ -85,8 +85,8 @@ lrr = LinearRegression().fit(X,Y)
 error = Y - lrr.predict(X)
 error = error.reshape(1,-1)[0]
 error.var()
-VaR_AR = -1*stats.norm.ppf(alpha,loc=0,scale = error.std())+Y[-1]
-VaR_AR[0]
+VaR_AR = -1*stats.norm.ppf(alpha,loc=0,scale = error.std())
+VaR_AR
 #%%
 # Historic Simulation
 Npoints = np.random.randint(len(Meta),size = 100)
@@ -98,7 +98,7 @@ VaR_Hs
 portfolio = pd.read_csv('Portfolio.csv')
 DailyPrices = pd.read_csv('DailyPrices.csv')
 returns = return_calculate(DailyPrices).iloc[1:,]
-currentprices = DailyPrices.iloc[0,:]
+currentprices = DailyPrices.iloc[-1,:]
 
 def gen_weight(lam,X):
     w = np.array([(1-lam)*(lam**i) for i in range(X.shape[0])])[::-1]
