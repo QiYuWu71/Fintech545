@@ -6,7 +6,6 @@ import seaborn as sns
 from scipy import stats
 from scipy.optimize import minimize
 from QuantRisk.mill import return_calculate
-from QuantRisk.VaR import mle_t
 from QuantRisk.ES import generalized_t_fitting
 #%%
 def VaR_ES(sim_x,alpha=0.05):

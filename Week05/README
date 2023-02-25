@@ -1,0 +1,12 @@
+Importing Libraries:
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from scipy import stats
+from scipy.optimize import minimize
+from QuantRisk.mill import return_calculate
+from QuantRisk.ES import generalized_t_fitting
+
+Library: QuantRisk with test cases

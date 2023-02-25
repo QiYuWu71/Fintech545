@@ -36,7 +36,6 @@ def AR_VaR(X,Y,alpha=0.05):
     lrr = LinearRegression().fit(X,Y)
     error = Y - lrr.predict(X)
     error = error.reshape(1,-1)[0]
-    error.var()
     VaR_AR = -1*stats.norm.ppf(alpha,loc=0,scale = error.std())
     return VaR_AR
 
